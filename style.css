@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+   
+    color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("login.jpg");
+   background-size: cover;
+    border-radius: 8px;
+}
+.box{
+    position :absolute;
+    top: 30%;
+    left:40%;
+    width: 380px;
+    height: 420px;
+    background: rgb(20, 12, 0);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,burlywood,burlywood);
+animation: animate 6s linear infinite;
+transform-origin: bottom right;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,burlywood,burlywood);
+animation: animate 6s linear infinite;
+transform-origin: bottom right;
+animation-delay: -3s;
+}
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+    
+}
+form{
+    position: absolute;
+    inset:2px;
+    border-radius: 8px;
+
+    background: rgb(20, 12, 0);
+    z-index: 10;
+}
+h1{
+    background-color: burlywood;
+    text-align: center;
+}
+h2{ margin-left: 150px;
+    
+}
+label {margin-left: 50px;
+}
+
+input{ margin-left: 50px;
+    
+}
+
+button:hover{
+    box-shadow: 20px 20px 30px burlywood
+}
+
+ button {
+
+    float: right;
+
+    background: beige;
+
+    padding: 10px 15px;
+
+    color: black;
+
+    border-radius: 5px;
+
+    margin-right: 10px;
+
+    border: none;
+
+}
+a{
+    color: white;
+    background-color: burlywood;
+}
