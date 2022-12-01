@@ -18,7 +18,7 @@
     <div class="box">
         <div class="form">
 
-     <form action="login.php" action='details.php' method="post">
+     <form action="admin.php" action='details.php' method="post">
 
         <h2>LOGIN</h2><br><br><br><br>
 
